@@ -12,7 +12,7 @@
 9. SHOW TABLE ok ; 
 10. Finish :)
 
-
+https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 
 
