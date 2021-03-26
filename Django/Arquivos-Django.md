@@ -16,7 +16,7 @@ Após chegar no database, ela retorna pelo mesmo caminho, configurando assim o p
 <h3>settings.py :</h3> Apresenta as principais configuraões do projeto, como banco de dados, templates, middlewares e apps instalados.
 <h3>views.py :</h3> As views ficam dentro das aplicações. 
 
-```jsx
+```py
 def index(request)
   return render(request, 'index.html')
 ```
@@ -25,6 +25,6 @@ def index(request)
 
 <h3>urls.py :</h3> Criam rotas específicas para cada view. 
 
-```jsx
+```py
 path('', nome_view.home name='home')
 ```
