@@ -11,6 +11,7 @@ class Product(model.models):
   price= models.DecimalField('Preço', decimal_places=2 , max_digits=8)
 ```
 - Confirmar se a aplicação está no settings.py!
+## Comandos para aplicar as modificações feitas nos models:
 - Makemigrations cria a migration!
 ```cmd
 python manage.py makemigrations
@@ -19,3 +20,12 @@ python manage.py makemigrations
 ```cmd
 python manage.py migrate
 ```
+- SQL Migrate mostra instruções SQL para uma migração.
+```cmd
+python manage.py sqlmigrate
+```
+- Show migrations mostra a lista de migrations da aplicação e seu status.
+```cmd
+python manage.py showmigrations
+```
+<strong>⚠️ Para facilitar, tente pensar nas migrations como um versionamento do seu banco de dados. _makemigrations_ é responsável por "empacotar" suas mudanças em arquivos individuais, como um commit por exemplo. E _migrate_ aplica essas mudanças no banco de dados.</strong>
