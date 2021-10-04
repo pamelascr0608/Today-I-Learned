@@ -30,4 +30,33 @@
     -- grid-row-end;
     - grid-area (Nome no grid-template-areas)
       
+## CSS Unitis
+- Fixo:
+  1. Pixels - px
+- Fluido:
+  1. Porcentagem - %
+  2. Automática - auto
+  3. Viewport Height - vh (100vh - toda parte visível da tela)
+  4. Viewport Width - vw
+ 
+ ### - Textos fixos:
+  1. Pixels - px
+- Textos responsivos:
+  1. "Em" - multiplicado pelo elemento pai
+  2. "Rem" - multiplicado pelo rootdo navegador
 
+
+### Media queries
+
+``` CSS
+@media (max-width:768px){
+}
+
+
+@media only screen and (max-width:550px){ ... }
+```
+
+#### Observações:
+```
+grid-template-columns: repeat(auto-fit, minmax(250), 1fr) // Ajusta as colunas de acordo com a largura estabelecida (min 250px max 1fr)
+```
